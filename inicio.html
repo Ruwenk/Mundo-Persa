@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="inicio.css">
     <h1>Mundo Persa</h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,45 @@
 </head>
 
 <body>
+    <div class= "formulario">
+        <h1 id="titulo-for">Registro de Usuario</h1> <br>
+        <form action="procesar_registro.php" method="post"> 
+            <label for="Usuario"> Seleccione Tipo de Usuario: <br> </label> <br> 
+    <select name="Usuario" id="Usuario"> Tipo de usuario
+        <option value="Cliente">Cliente</option> 
+        <option value="Vendedor">Vendedor</option>
+        <option value="Administrador">Administrador</option>
+    </select> <br>
+     <br>
+            <label for="Nombres">Identificacion:</label> <br>
+            <input type="text" id="id" name="id" required> <br>
+            <br>
+            <label for="Nombres">Nombre completo:</label> <br>
+            <input type="text" id="Nombre" name="name" required> <br>
+            <br>
+            <label for="Apellidos">Apellidos:</label> <br>
+            <input type="text" id="Apellidos" name="Apellidos" required> <br>
+            <br>
+            <label for="email">Correo Electrónico:</label> <br>
+            <input type="email" id="email" name="email" required> <br>
+            <br>
+           <label for="contrasena">Contraseña:</label> <br>
+            <input type="password" id="contrasena" name="contrasena" required> <br>
+            <br> 
+            <label for="Ciudad">Ciudad:</label> <br>
+            <input type="text" id="Ciudad" name="Ciudad" required> <br>
+            <br>
+            <label for="contrasena">Direccion:</label> <br>
+            <input type="text" id="Direccion" name="Direccion" required> <br>
+            <br> 
+            <label for="Telefono">Telefono:</label> <br>
+            <input type="text" id="Telefono" name="Telefono" required> <br>
+            <br>
+            <br>
+            <div class="boton-registro">
+            <input type="submit" value="Registrarse"> </div>
+        </form>
+    </div>
     
 </body>
 </html>
